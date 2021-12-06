@@ -1,0 +1,277 @@
+div.body {
+
+    width: 100%;
+    height: 100%;
+    background-color: #f1e3c9;
+    margin: 0;
+
+}
+
+div.content {
+
+    display: flex;
+    /* border: red 2px solid; */
+    align-items: center;
+
+}
+
+    div.container {
+
+        position: relative;
+        display: flex;
+        width: 700px;
+        height: 700px;
+        /* border: purple 2px solid; */
+        justify-content: center;
+        left: 40px;
+
+    }
+
+        div.circle {
+
+            position: relative;
+            width: 600px;
+            height: 600px;
+            border-radius: 100%;
+            margin-top: 50px;
+
+        }
+
+        div.positif {
+
+            border: 2px solid #2ba8a8;
+            animation: positif 10s alternate infinite;
+            background: radial-gradient(#1ad89f, #236464 10%,  #43b4b4, #146d6d,#083131,#000808);
+            background-size: 300% 300%;
+
+        }
+
+        div.negatif {
+
+            border: 2px solid #a82b2b;
+            animation: negatif 5s alternate infinite;
+            background: radial-gradient(#d81a1a, #642323 10%,  #b44343, #6d1414,#310808,#080000);
+            background-size: 300% 300%;
+
+        }
+
+        div.neutral {
+
+            border: 2px solid #aca6a6;
+            animation: neutral 10s alternate infinite;
+            background: radial-gradient(#cdcccf, #5a5858 10%,  #bdbaba, #706f6f,#302e2e,#070707);
+            background-size: 300% 300%;
+
+        }
+
+    div.response {
+
+        /* border: 2px solid green; */
+        position: relative;
+        display: inline;
+        width: 350px;
+        height: 700px;
+
+    }
+
+        div.talk {
+
+            
+            margin-top: 150px;
+            text-align: center;
+            border-radius: 60%;
+            font-size: 25px;
+
+        }
+
+            div.talk_negatif {
+
+                border: 4px rgb(46, 1, 1) solid;
+                background-color: rgb(139, 59, 59);
+                color: snow;
+
+            }
+            div.talk_positif {
+
+                border: 4px rgb(1, 46, 44) solid;
+                background-color: rgb(59, 139, 108);
+                color: snow;
+
+            }
+            div.talk_neutral {
+
+                border: 4px rgb(39, 39, 39) solid;
+                background-color: rgb(139, 138, 138);
+                color: snow;
+
+            }
+
+    div.text {
+
+        position: relative;
+        display: inline;
+        width: 700px;
+        height: 700px;
+        border-left: 5px solid rgb(8, 5, 1);
+        left: 6%;
+
+    }
+
+        div.form {
+
+            height: auto;
+            /* border: red 2px solid; */
+            text-align: center;
+            margin-top: 100px;
+
+        }
+
+            label.label {
+
+                font-size: 50px;
+
+            }
+
+            input.input {
+
+                width: 300px;
+                height: 50px;
+                background-color: rgb(94, 68, 34);
+                color: snow;
+                border: none;
+                padding-left: 10px;
+                font-size: 20px;
+
+            }
+
+            input.input:focus {
+
+                border: none;
+                outline: none;
+
+            }
+
+            input.input:active {
+
+                border: none;
+                outline: none;
+
+            }
+
+            input.input::placeholder {
+
+                color: rgb(221, 221, 221);
+
+            }
+
+            button.submit {
+
+                border: none;
+                width: 150px;
+                height: 50px;
+                margin-top: 10px;
+                background-color: rgb(94, 68, 34);
+                color: snow;
+                box-shadow: 2px 2px rgb(8, 5, 1);
+
+            }
+
+            button.submit:hover {
+
+                background-color: rgb(63, 45, 22);
+
+            }
+
+            button.submit:active {
+
+                box-shadow: none;
+                margin-left: 2px;
+                margin-top: 12px;
+
+            }
+
+            button.submit:focus {
+
+                border: 1px rgb(8, 5, 1) solid;
+                outline: none;
+
+            }
+
+        div.validation {
+
+            /* border: snow 2px solid; */
+            text-align: center;
+
+        }
+
+    @keyframes negatif {
+        0% {
+            background-position: 60% 50%;
+        }
+
+        25% {
+            background-position: 60% 40%;
+        }
+
+        50% {
+            background-position: 40% 40%;
+
+        }
+
+        75% {
+            background-position: 40% 40%;
+        }
+
+        100% {
+            background-position: 55% 50%;
+        }
+
+    }
+
+    @keyframes positif {
+        0% {
+            background-position: 60% 60%;
+        }
+
+        25% {
+            background-position: 60% 60%;
+        }
+
+        50% {
+            background-position: 50% 55%;
+
+        }
+
+        75% {
+            background-position: 40% 60%;
+        }
+
+        100% {
+            background-position: 40% 60%;
+        }
+
+    }
+    
+    @keyframes neutral {
+        0% {
+            background-position: 50% 50%;
+        }
+
+        25% {
+            background-position: 45% 50%;
+        }
+
+        50% {
+            background-position: 50% 50%;
+
+        }
+
+        75% {
+            background-position: 55% 50%;
+        }
+
+        100% {
+            background-position: 50% 50%;
+        }
+
+    }
